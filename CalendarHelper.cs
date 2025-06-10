@@ -4,7 +4,7 @@ using Ical.Net.Serialization;
 using System;
 using System.Globalization;
 
-namespace To_Do
+namespace ICalendarHelper
 {
     internal class CalendarHelper
     {
@@ -146,7 +146,7 @@ namespace To_Do
         {
             Console.Clear();
             Console.WriteLine("========== CO CHCETE ZOPRAZIT? ==========");
-            Console.WriteLine("1. Událost");
+            Console.WriteLine("1. Event");
             Console.WriteLine("2. To-Do");
             Console.WriteLine("3. Volno");
             Console.WriteLine("4. Vše");
@@ -189,7 +189,7 @@ namespace To_Do
         {
             Console.Clear();
             Console.WriteLine("========== CO CHCETE PŘIDAT ==========");
-            Console.WriteLine("1. Událost");
+            Console.WriteLine("1. Event");
             Console.WriteLine("2. To-Do");
             Console.WriteLine("3. Volno");
             Console.WriteLine();
@@ -207,7 +207,7 @@ namespace To_Do
                     Console.ReadKey();
                     break;
                 case "3":
-                    _calendar.FreeBusy.Add(FreeBusyHelper.CreateFreeBusyComponent());
+                    _calendar.FreeBusy.Add(FreeBusyHelper.Create());
                     Console.WriteLine("FreeBusy byl vytvořen úspěšně.");
                     Console.ReadKey();
                     break;
@@ -220,7 +220,7 @@ namespace To_Do
         {
             Console.Clear();
             Console.WriteLine("========== CO CHCETE ODEBRAT ==========");
-            Console.WriteLine("1. Událost");
+            Console.WriteLine("1. Event");
             Console.WriteLine("2. To-Do");
             Console.WriteLine("3. Volno");
             Console.WriteLine();

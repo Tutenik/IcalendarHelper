@@ -1,19 +1,13 @@
 ﻿using Ical.Net;
 using Ical.Net.CalendarComponents;
 using Ical.Net.DataTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Mail;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace To_Do
+namespace ICalendarHelper
 {
     internal class FreeBusyHelper
     {
-        public static FreeBusy CreateFreeBusyComponent()
+        public static FreeBusy Create()
         {
             var fb = new FreeBusy
             {

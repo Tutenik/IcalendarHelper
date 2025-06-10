@@ -1,6 +1,6 @@
 ﻿using Ical.Net;
 
-namespace To_Do
+namespace ICalendarHelper
 {
     internal class Program
     {
